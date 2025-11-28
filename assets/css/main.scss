@@ -1,6 +1,9 @@
 ---
 ---
 
+/* 1. 调整页面最大宽度 (默认约 1280px，这里放大约 1.5 倍) */
+$max-width: 1920px !default; 
+
 @import "minimal-mistakes";
 
 /* 
@@ -12,6 +15,18 @@ body {
   background-color: #f0f2f5; /* 浅灰色背景 */
 }
 
+/* 2. 导航栏样式调整：与背景融合 */
+.masthead {
+  background-color: #f0f2f5 !important; /* 强制背景色与 body 一致 */
+  border-bottom: none; /* 去掉底部分割线 */
+  box-shadow: none; /* 去掉阴影 */
+}
+
+.masthead .masthead__inner-wrap {
+  background-color: transparent !important; /* 内部容器透明 */
+}
+
+/* 3. 内容区域卡片化 */
 .page__inner-wrap {
   background-color: #ffffff; /* 内容区域白色 */
   padding: 40px; /* 增加内边距 */
@@ -19,6 +34,17 @@ body {
   border-radius: 8px; /* 圆角 */
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/* 4. 针对宽屏的额外调整，确保内容区域变宽 */
+@media (min-width: 1024px) {
+  .page {
+    /* 覆盖主题默认的宽度限制 */
+    max-width: 1600px !important; 
+    /* 如果没有侧边栏，可以让内容居中且更宽 */
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* 针对移动端的调整 */
