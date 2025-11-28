@@ -38,12 +38,30 @@ body {
 
 /* 4. 针对宽屏的额外调整，确保内容区域变宽 */
 @media (min-width: 1024px) {
+  /* 调整主容器宽度 */
   .page {
-    /* 覆盖主题默认的宽度限制 */
     max-width: 1600px !important; 
-    /* 如果没有侧边栏，可以让内容居中且更宽 */
+    width: 100% !important;
     margin-left: auto;
     margin-right: auto;
+    float: none !important; /* 防止浮动导致的宽度限制 */
+  }
+
+  /* 确保内容包裹层撑满 */
+  .page__inner-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* 确保文章正文撑满，不被阅读宽度限制 */
+  .page__content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* 调整侧边栏后的主内容宽度 (如果有侧边栏) */
+  .sidebar {
+     /* 保持侧边栏样式，但确保它不会过度挤压主内容 */
   }
 }
 
