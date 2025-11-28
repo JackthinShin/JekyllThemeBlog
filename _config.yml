@@ -58,7 +58,7 @@ plugins:
 
 author:
   name   : "Jackthin Shin"
-  avatar : "/JekyllThemeBlog/assets/images/avatar.jpg"
+  avatar : "/assets/images/avatar.jpg"
   bio    : "I am who I am, I have nothing to hide."
   links:
     - label: "Website"
