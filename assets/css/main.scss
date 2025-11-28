@@ -15,12 +15,12 @@ body {
 /* 2. 导航栏样式调整：与背景融合 */
 .masthead {
   background-color: #f0f2f5 !important; /* 强制背景色与 body 一致 */
-  border-bottom: none; /* 去掉底部分割线 */
-  box-shadow: none; /* 去掉阴影 */
+  border-bottom: none !important; /* 去掉底部分割线 */
+  box-shadow: none !important; /* 去掉阴影 */
 }
 
 .masthead .masthead__inner-wrap {
-  background-color: transparent !important; /* 内部容器透明 */
+  background-color: #f0f2f5 !important; /* 内部容器也设为灰色，防止透明失效 */
 }
 
 /* 3. 内容区域卡片化 */
@@ -37,25 +37,17 @@ body {
 @media (min-width: 1024px) {
   /* 仅针对文章页面 (.layout--single) 调整宽度 */
   .layout--single .page {
+    /* 增加总宽度，但不要破坏原有的浮动布局 */
     max-width: 1600px !important; 
-    width: 100% !important;
     margin-left: auto;
     margin-right: auto;
-    float: none !important;
-  }
-
-  /* 仅在文章页面让内容撑满 */
-  .layout--single .page__inner-wrap {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  .layout--single .page__content {
-    width: 100% !important;
-    max-width: 100% !important;
   }
   
-  /* 首页和其他页面保持默认宽度，不做修改 */
+  /* 
+     移除之前强制 100% 宽度的代码，
+     这会导致内容区无视侧边栏的存在，从而发生重叠。
+     让主题默认的布局逻辑去处理剩余空间即可。
+  */
 }
 
 /* 针对移动端的调整 */
