@@ -55,7 +55,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Jackthin"
+  name   : "Jackthin Shin"
   avatar : "/assets/images/avatar.jpg"
   bio    : "I am who I am, I have nothing to hide."
   links:

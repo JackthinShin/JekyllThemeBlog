@@ -1,4 +1,4 @@
-# [Welcome to Jackthin's Blog!]
+# Welcome to Jackthin's Blog!
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/JackthinShin/JekyllThemeBlog)
 [![Jekyll](https://img.shields.io/badge/Jekyll-4.x-red.svg)](https://jekyllrb.com/)
