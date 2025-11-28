@@ -13,6 +13,6 @@ tags:
   
 > <cite><a href="https://www.brainyquote.com/quotes/bertrand_russell_383143">Bertrand Russell</a></cite>
 
-![A rose by any other name would smell as sweet](/assets/images/a-rose-by-any-other-name-would-smell-as-sweet.webp)
+![A rose by any other name would smell as sweet](/JekyllThemeBlog/assets/images/a-rose-by-any-other-name-would-smell-as-sweet.webp)
 
 > A rose by any other name would smell as sweet.
