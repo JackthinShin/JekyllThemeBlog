@@ -1,0 +1,29 @@
+---
+---
+
+@import "minimal-mistakes";
+
+/* 
+   自定义样式：卡片式布局 
+   让背景变灰，内容变白并添加阴影，从而突出文档内容
+*/
+
+body {
+  background-color: #f0f2f5; /* 浅灰色背景 */
+}
+
+.page__inner-wrap {
+  background-color: #ffffff; /* 内容区域白色 */
+  padding: 40px; /* 增加内边距 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+  border-radius: 8px; /* 圆角 */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* 针对移动端的调整 */
+@media (max-width: 768px) {
+  .page__inner-wrap {
+    padding: 20px;
+  }
+}
