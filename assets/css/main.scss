@@ -38,31 +38,27 @@ body {
 
 /* 4. 针对宽屏的额外调整，确保内容区域变宽 */
 @media (min-width: 1024px) {
-  /* 调整主容器宽度 */
-  .page {
+  /* 仅针对文章页面 (.layout--single) 调整宽度 */
+  .layout--single .page {
     max-width: 1600px !important; 
     width: 100% !important;
     margin-left: auto;
     margin-right: auto;
-    float: none !important; /* 防止浮动导致的宽度限制 */
+    float: none !important;
   }
 
-  /* 确保内容包裹层撑满 */
-  .page__inner-wrap {
+  /* 仅在文章页面让内容撑满 */
+  .layout--single .page__inner-wrap {
     width: 100% !important;
     max-width: 100% !important;
   }
 
-  /* 确保文章正文撑满，不被阅读宽度限制 */
-  .page__content {
+  .layout--single .page__content {
     width: 100% !important;
     max-width: 100% !important;
   }
   
-  /* 调整侧边栏后的主内容宽度 (如果有侧边栏) */
-  .sidebar {
-     /* 保持侧边栏样式，但确保它不会过度挤压主内容 */
-  }
+  /* 首页和其他页面保持默认宽度，不做修改 */
 }
 
 /* 针对移动端的调整 */
