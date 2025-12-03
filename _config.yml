@@ -24,7 +24,15 @@ minimal_mistakes_skin: default
 search: true
 
 # Build settings
-markdown: CommonMarkGfm
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+  math_engine: mathjax
+  math_engine_opts:
+    show_preview: true
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -55,7 +63,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - jekyll-katex
 
 author:
   name   : "Jackthin Shin"
